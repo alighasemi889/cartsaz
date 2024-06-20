@@ -1,0 +1,41 @@
+.desc{
+    font-size: 16px;
+    font-family: iranYekan , sans-serif;
+}
+.btn-style,.btn-whatsapp{
+    text-decoration: none;
+    width: 50%;
+    border: 1px solid #D12879;
+    color: #D12879;
+    display: flex;
+    justify-content: center;
+    padding: 15px 30px;
+    border-radius: 10px;
+    gap: 10px;
+}
+.btn-style:hover,.btn-whatsapp:hover{
+    cursor: pointer;
+    transition: all ease-in-out 0.5ms;
+}
+.btn-whatsapp{
+    border: 1px solid #2FDB9D;
+    color: #2FDB9D;
+}
+.link-style{
+    font-size: 20px;
+    cursor: pointer;
+}
+@media only screen and (min-width:320px) and (max-width: 767px) {
+    .btn-style,.btn-whatsapp{
+        width: 75% !important;
+    }
+     .img-contactUs{
+        display: none;
+     }
+     .link-style{
+        font-size: 18px;
+    }
+     .desc{
+        font-size: 14px;
+     }
+}

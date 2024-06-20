@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  scroll-behavior:smooth;
+}
+.title{
+  font-size: 24px;
+  color: #0172DE;
+  font-family: iranYekan;
+}
+:root{
+    --blue-100:'#DFEFFF';
+    --blue-200:'#60B1FE';
+    --blue-300:'#0172DE';
+     --orange-100:'#FFE7DF';
+     --orange-200:'#FE8660';
+     --orange-300:'#DE3601';
+     --orange-400:"#FE3E01";
+     --red-100:'#FFF2F2';
+     --red-200:'#ED2E2E';
+     --red-300:'#C30000';
+     --red-400:"#D12879";
+     --yellow-100:'#FFF8E1';
+     --yellow-200:'#F4B740';
+     --yellow-300:'#A9791C';
+     --green-100:'#F3FDFA';
+     --green-200:'#00BA88';
+     --green-300:'#00966D';
+   --black:'#171F26';
+   --bg:'#EDEDED';
+   --gray:'#74787C';
+   --cardBorder:'#CBCBCB';
+}
+@font-face {
+  font-family: "iranYekan";
+  src: url('../public//fonts/Qs_Iranyekan\ medium.ttf');
+}
+@font-face {
+  font-family: "iranYekanBold";
+  src: url('../public//fonts/Qs_Iranyekan\ extrabold.ttf');
+}
+
+@layer components{
+  .card-style {
+    @apply transition hover:cursor-pointer duration-300 ease-in-out hover:shadow-lg bg-white my-2 rounded-lg border border-cardBorder shadow-xl p-6 h-[460px] max-w-80 lg:max-w-64 mx-3 flex flex-col gap-y-8 items-center justify-between;
+  }
+  .header-link{
+    @apply block no-underline font-iranYekan py-2  border-b lg:hover:bg-transparent lg:border-0 text-black lg:hover:text-blue-700 lg:p-2 ;
+  }
+}
